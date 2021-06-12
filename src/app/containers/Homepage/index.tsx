@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import Navbar from '../../components/navbar';
 
 const PageContainer = styled.div`
   ${tw`
@@ -16,7 +17,11 @@ const PageContainer = styled.div`
 interface Props {}
 
 const HomePage = (props: Props) => {
-  return <div></div>;
+  return (
+    <PageContainer>
+      <Navbar />
+    </PageContainer>
+  );
 };
 
 export default HomePage;
